@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALLAN JOHNSON</title>
+</head>
+<style>
+     *{
+            text-decoration: none;
+            font-style: normal;
+            font-family: inherit;
+            text-align: center;
+            box-sizing: border-box;
+            flex-wrap: wrap;
+    
+            padding: 0;
+            margin: 0;
+        
+            scroll-behavior: smooth;
+           
+
+
+        }
+    .nav{
+        
+        /* display: flex; */
+        /* padding-right: 15px;*/
+        padding: 15px; 
+        /*color: white;*/
+
+
+    }
+    .navdiv{
+        display: flex; 
+        align-items: center;
+        justify-content: space-between;
+        /* color: white; */
+        
+    }
+    .logo {
+        display: flex;
+        font-size: 35px;
+        font-weight: 600;
+         color:black; 
+    }
+    li{
+            list-style: none;
+            display: inline; 
+            font-size: 18px;
+            font-weight: bold;
+            margin-right: 25px;
+            
+    
+        }
+       li  a{
+            color:black; 
+             
+        }
+        a:hover{
+            color:lightgray;
+            
+            
+        }
+        .login{
+            background-color:transparent;
+            padding: 8px 16px;
+            border-radius: 250px;
+            color:#53b4aa;
+            border:1px solid lightgray;
+            font-size: 16px;
+            justify-content: center;
+            font-weight: 600;
+            gap: 8px;
+            
+
+        }
+
+        #h5{
+        display: flex;
+        margin-top: 35px;
+        align-items: start;
+        justify-content: flex-start;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 13px;
+        font-weight: 5px;
+        /* background-color: #7accf5; */
+        
+    }
+
+
+        /* .signup{
+            background-color:#2b005c;
+            padding: 8px 16px;
+            border-radius: 250px;
+            color:white;
+            border:none;
+            font-size: 16px;
+            justify-content: center;
+            font-weight: 600;
+            gap: 8px
+
+        } */
+    
+
+        .img1{
+            width: 100%;
+            height: auto;
+            display: flex;
+            background-attachment: fixed;
+            position: relative;
+
+        }
+
+        .h2{
+            display: flex;
+            position: absolute;
+            top: 170px;
+            left: 37%;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+
+            
+
+        }
+        .h1{
+            display: flex;
+            position: absolute;
+            top: 180px;
+            left: 30%;
+            font-weight: bolder;
+            font-size: 160px;
+            /* font-size: 50px; */
+        }
+
+        .h3{
+            display: flex;
+            position: absolute;
+            top: 350px;
+            left: 41%;
+            /* gap:10px 10px; */
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+        }
+        .Book{
+        
+            background-color:black;
+            text-align: center;
+            padding: 10px 16px;
+            /* border-radius: 250px; */
+            color:white;
+            border:none;
+            font-size: 16px;
+            justify-content: center;
+            align-items: center;
+            gap :10px;
+            font-weight: 600;
+            text-decoration: none;
+             top: 410px;
+            position:absolute;
+
+
+        }
+        .side .side1{
+    width: 700px;
+    height: 700px;
+    
+
+    /* background-color: aqua; */
+
+}
+
+.side .side2{
+    width: 700px;
+    height: 700px;
+    /* background-color: aqua; */
+
+
+}
+
+
+.side{
+    width: 100%;
+    min-height: 80vh;
+    background-size: cover;
+    position: relative;
+    background-color: #fff;
+    display: flex;
+     justify-content: space-between;
+     align-items: center;
+     height: 100%;
+}
+
+.side img{
+    max-width: 800px;
+    max-height: 1200px;
+}
+
+.side1_h2{
+    /* left: 20% */
+    font-size: 2.5em;
+    font-weight: bolder;
+    text-align: left;
+    
+
+}
+
+.side .side1 p{
+     font-size: 2rem;
+     padding: 10px 0;
+     text-align: left;
+     color:var(--black);
+     
+
+}
+
+.Free_con{
+    background-color:black;
+            text-align: center;
+            padding: 10px 20px ;
+            /* margin-top: 10px; */
+            color:white;
+            border:1px solid black;
+            font-size: 20px;
+            justify-content: center;
+            align-items: center;
+            gap :10px;
+            font-weight: 600;
+            text-decoration: none;
+            
+}
+
+.Free_con :hover{
+    color: dimgray;
+}
+
+
+.img_mount{
+    width: 100%;
+            height: auto;
+            display: flex;
+            background-attachment: fixed;
+            position: relative; 
+}
+
+/* .mount_h1
+{
+    display: flex;
+            position: absolute;
+            top: 1900px;
+            left: 1%;
+            font-family: 'Courier New', Courier, monospace;
+            color:black;
+            font-size: 50px;
+} */
+
+.mount_h1{
+    display: flex;
+    /* background-color: #9ce4fa; */
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+}
+
+.mount_help{
+    animation: help;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+
+}
+
+@keyframes help
+        {
+            0%{
+                color: black;
+                margin-bottom:-40px ;
+
+            }
+            30%{
+                letter-spacing: 30px;
+                margin-bottom: -40px;
+            }
+            85%{
+                letter-spacing: 8px;
+                margin-bottom: -40px;
+
+            }
+            100%{
+                margin-bottom: 20px;
+            }
+        }
+
+.mount_p{
+    color: black;
+    display: flex;
+    
+            position: absolute;
+            bottom: 1000px;
+            left: 37%;
+            font-family: 'Courier New', Courier, monospace;
+            color: black;
+}
+
+/* boxxxxxx */
+.feild_top{
+    top:3000px;
+}
+
+.field{
+       width: 100%;
+       display: flex;
+       flex-wrap: wrap;
+       padding: 20px 0;
+ }
+
+  .field .box{
+        flex: 1 13rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 0;
+        
+        background-image: url(/css/template/images/mount.jpg);
+        background-repeat: no-repeat;
+        /* border: 1px solid black; */
+ }
+.field .box h2{ 
+      font-size: 1.2rem;
+      color: black;
+      text-transform: capitalize;
+      z-index: 11;
+ }
+  .field .box p{
+    padding: 0;
+    font-size: 1rem;
+    color: black;
+    /* background-color: aqua; */
+    z-index: 1;
+
+ }
+  /* .field .box img{
+       max-width: 200px;
+       max-height: 150px;
+       align-self: center;
+       transition: .3s;
+         z-index: 0; */
+ /* } */
+  .field .box a.btn{
+    display: block;
+    /* align-self: baseline; */
+            margin-top: 20px;
+            background-color:black;
+   
+            text-align: center;
+            padding: 10px 20px ;
+            /* margin-top: 10px; */
+            color:white;
+            /* border:1px solid black; */
+            font-size: 20px;
+            justify-content: center;
+            align-items: center;
+            gap :30px;
+            font-weight: 600;
+            text-decoration: none;
+
+    
+}
+
+
+.footer{
+            background-color:#7accf5;
+            color:black;
+            text-align: center;
+            width: 100%;
+        }
+        .footlink{
+
+            display: flex;
+            color: black;
+            justify-content: center;
+            text-decoration: none;
+        }
+        .footlink a{
+            color:black;
+            font-size: 10;
+            align-items: space-evenly;
+            justify-content: space-around;
+        }
+
+ 
+
+
+       
+</style>
+<body>
+
+    <div id="site container">
+        <nav class="nav">
+            <div class="navdiv">
+             <div class="logo"><i class="#"></i> ALLAN  JOHNSON <br>  <h5 id="h5">Personal life coach</h5> </div>
+             <ul> 
+                 
+                 <li><a href="#side">AboutUs</a></li>
+                 <li><a href="#mount">Services</a></li>
+                 <!-- <li><a href="#">Guide</a></li> -->
+                 <li><a href="log.html" class="Log_in">Log In</a></li>
+
+
+                 
+             </ul>
+     
+            </div>
+         </nav>
+         <div id="img_container">
+         <img  class=" img1" src="/css/template/images/nature.jpg" alt="">
+         <h2 class="h2" >AMBITION IS THE FIRST STEP TOWARDS </h2>
+         <h1 class="h1" ><STRONG>SUCCESS</STRONG></h1>
+         <h3 class="h3" > NOT AVAIABLE FOR ONLINE COACHING</h3>
+
+         
+
+    </div>
+    
+    <a href="services.html" class="Book">Book Now</a>
+
+    
+    <div class="side" id="side">
+    <div class="side1">
+        <h2 class="side1_h2">WHY ALLAN</h2>
+      <p>  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, recusandae explicabo laudantium reiciendis laborum nesciunt consequuntur hic aliquam similique, corporis fugiat sint tenetur libero ratione quod ut ex et magni.
+        Nulla, sapiente. <br>Totam explicabo eius nobis odit modi dolorum illo aperiam repellendus ullam necessitatibus alias laborum autem, a ab consequatur? Eius doloribus nisi dolorum voluptates nostrum molestias quo vel? Recusandae.<br>
+        Hic ea nobis facere sunt nesciunt ab maxime qui quod, recusandae consectetur! Unde rem asperiores veritatis illum quo eum, corporis, quibusdam qui iure omnis maxime. Sint perferendis incidunt dolorem praesentium!.    
+      </p>
+      <a href="Freeconsultation.html" class="Free_con">Free Consultation</a>
+    </div>
+    <div class="side2">
+        <img src="/css/template/images/person.png" alt="">
+    </div>
+    
+
+    
+    </div>
+    
+
+    <div class="mount" id="mount">
+
+        <!-- <img class="img_mount" src="/css/template/images/mount.jpg" alt=""> -->
+        <h1 class="mount_h1"><span class="mount_help"> HOW CAN I HELP YOU</h1>
+        <!-- <p class="mount_p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta debitis incidunt illo aperiam dolores ut quo magnam neque, tenetur vel animi adipisci velit excepturi labore aliquam quaerat sit minus numquam.
+        Sapiente ab odio error vel, eius sed natus dicta ea hic cupiditate nemo earum numquam alias corporis doloribus, saepe similique quos dolore consectetur itaque aperiam voluptates. Ipsam totam dicta odio!
+        Commodi vel iure accusamus maiores nam aut illo, ratione praesentium eius id reprehenderit, consequuntur magnam odit quia amet quidem, blanditiis quo animi libero beatae. Itaque obcaecati tempora architecto blanditiis non?
+        Esse suscipit aspernatur eligendi delectus cumque quae alias atque? Dicta sequi praesentium facilis sapiente, at quos! Quo, ab tenetur ea odio delectus et alias commodi neque fuga labore, eum fugiat.</p> -->
+
+        <br>
+        <div class="field_top">
+        <div class="field">
+            <div class="box">
+                <h2>Free Consultation</h2>
+                <p>Use This Area Tt Describe One Of You Services</p><br>
+               <p><br></p> <br>
+                <p>45 min</p>
+                <a href="" class="btn">Book It</a>
+            </div>
+            <div class="box">
+                <h2>Online Coaching</h2>
+                <p>Use This Area Tt Describe One Of You Services</p>
+                <p>1 Hr</p>
+                <p>$70</p>
+                <a href="" class="btn">Book It</a>
+            </div>
+            <div class="box">
+                <h2>Self Improvement Workshop</h2>
+                <p>Use This Area Tt Describe One Of You Services</p>
+                <p>mon,Tue,Wed,Thr,Fri</p>
+                <p>$90</p>
+                <a href="" class="btn">Book It</a>
+            </div>
+        </div>
+            
+        </div>
+
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footcontent">
+
+        <p>Copyright 2023 ALLAN JOHNSON. All rights reserved.</p>
+
+    
+    <div class="footlink">
+        <h4><a href="#">Regulatory | </a></h4>
+        <h4><a href="#"> Policies | </a></h4>
+        <h4><a href="#">Terms & Conditions</a></h4>
+    </div>
+    </div>
+</footer>
+    
+</body>
+</html>
